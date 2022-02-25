@@ -4104,8 +4104,7 @@ input[type="submit"] {
     }
 }
 
-#about-me-pic {
-    border-radius: 50px 50px 50px 50px;
-    -moz-border-radius: 50px 50px 50px 50px;
-    -webkit-border-radius: 50px 50px 50px 50px
+.tech-stack-img {
+    max-height: 5vh;
+    max-width: 5vw;
 }
