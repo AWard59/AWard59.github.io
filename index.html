@@ -1,34 +1,31 @@
 <!doctype html>
-<html lang="en" class="no-js">
-
-<head>
-    <title>McCan</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/et-lineicons.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style-animations.css"> 
-</head>
+<html lang="en">
+    
+    <head>
+        <title>Ash Ward</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/et-lineicons.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style-animations.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/functions.js"></script>
+    </head>
 
 <body class="cv has-additional-menu-content">
-    <header id="identity">
-        <!-- Logo -->
-        <div class="logo">
-            <a href="index.html" class="logo-link" rel="home"> <img src="images/logo.png" class="logo" alt=""> </a>
-        </div>
-    </header>
+
     <!-- Menu -->
     <div id="site-menu">
         <nav class="nav-menu">
             <ul>
-                <li class="menu-item current-menu-item"><a href="index.html">About Me</a></li>
-                <li class="menu-item"><a href="resume.html">Resume</a></li>
-                <li class="menu-item"><a href="portfolio.html">Projects</a></li>
-                <li class="menu-item"><a href="contact.html">Contact</a></li>
+                <li class="menu-item current-menu-item" id="about-me-link"><a href="#">About Me</a></li>
+                <li class="menu-item" id="resume-link"><a href="#">Resume</a></li>
+                <li class="menu-item" id="projects-link"><a href="#">Projects</a></li>
+                <li class="menu-item" id="contact-link"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -36,10 +33,11 @@
     <div class="hero-media">
         <div class="owl-carousel" data-expand-duration="800">
             <div class="item owl-lazy" data-src="images/slider.jpg"></div>
-        </div> <span class="overlay"></span> <span class="ti ti-spin ti-loading"></span> </div>
-   
+        </div></div>
+
+        
     <!-- Content - about-me -->
-    <div class="content-wrap clearfix about-me">
+    <div class="content-wrap clearfix about-me-page">
         <!-- About Me -->
         <div class="mccan page">
             <h3 class="title-small">Full Stack Software Engineer</h3>
@@ -48,7 +46,10 @@
                 <div class="grid-container">
                     <div class="grid-column">
                         <p>Hi, I’m a full stack developer proficient in MERN stack (MongoDB, Express, React, Node) and Python. I enjoy creating fully functional full stack web applications from the ground upwards. Often I find myself finding solutions to the problems while they are not even in front of me. I would love to work for a company that encourages growth and personal development, as I wish to continue improving my skills and learning new technologies.</p>
-                </div>
+                    </div>
+                    <div class="grid-column">
+                        <img src="images/about-me.jpg" id="about-me-pic">
+                    </div>
             </div>
         </div>
         <!-- Services -->
@@ -122,7 +123,7 @@
     </div>
 
    <!-- Content - projects -->
-    <div class="content-wrap clearfix">
+    <div class="content-wrap clearfix projects-page">
         <div class="mccan page">
             <h3 class="title-small">Take A Look At</h3>
             <h2 class="title">Projects</h2>
@@ -170,55 +171,14 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-6">
-                                <a href="projects.html" class="desc">
-                                    <div class="project"> <img src="images/portfolio/08.jpg" class="img-fluid" alt="">
-                                        <div class="desc">
-                                            <div class="con">
-                                                <h3>Project 05</h3> <span>Book Cover, Branding</span> </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="projects.html" class="desc">
-                                    <div class="project"> <img src="images/portfolio/03.jpg" class="img-fluid" alt="">
-                                        <div class="desc">
-                                            <div class="con">
-                                                <h3>Project 06</h3> <span>Catalog, Branding</span> </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="projects.html" class="desc">
-                                    <div class="project"> <img src="images/portfolio/06.jpg" class="img-fluid" alt="">
-                                        <div class="desc">
-                                            <div class="con">
-                                                <h3>Project 07</h3> <span>Tomongkol, Branding</span> </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="projects.html" class="desc">
-                                    <div class="project"> <img src="images/portfolio/04.jpg" class="img-fluid" alt="">
-                                        <div class="desc">
-                                            <div class="con">
-                                                <h3>Project 08</h3> <span>Box Mockup, Branding</span> </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
    <!-- Content - contact-->
-    <div class="content-wrap">
+    <div class="content-wrap contact-page">
         <div class="mccan page">
             <h3 class="title-small">LOCATION</h3>
             <h2 class="title">Contact Me</h2>
@@ -276,9 +236,10 @@
             </div>
         </div>
     </div>
+    </div>
 
    <!-- Content - resume -->
-    <div class="content-wrap clearfix">
+    <div class="content-wrap clearfix resume-page">
         <div class="mccan page">
             <h3 class="title-small">Resume</h3>
             <h2 class="title">Experience</h2>
@@ -342,7 +303,6 @@
         </div>
         </div>
 
-
     <!-- My Info -->
     <div class="my-info">
         <div class="box">
@@ -363,9 +323,8 @@
         </div>
     </div>
     <!-- Js -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="assets/js/app.js"></script> -->
     <script src="assets/js/modernizr-custom.js"></script>
     <script src="assets/js/owl-carousel.min.js"></script>
-    <script src="assets/js/functions.js"></script>
 </body>
 </html>
