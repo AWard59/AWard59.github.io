@@ -404,10 +404,10 @@ const aboutPageDisplay = () => {
   jQuery('.projects-page').hide()
   jQuery('.contact-page').hide()
 
-  jQuery('.about-me-link').addClass('current-menu-item')
-  jQuery('.resume-link').removeClass('current-menu-item')
-  jQuery('.projects-link').removeClass('current-menu-item')
-  jQuery('.contact-link').removeClass('current-menu-item')
+  jQuery('.about-me-menu').addClass('current-menu-item')
+  jQuery('.resume-menu').removeClass('current-menu-item')
+  jQuery('.projects-menu').removeClass('current-menu-item')
+  jQuery('.contact-menu').removeClass('current-menu-item')
 }
 
 const resumePageDisplay = () => {
@@ -416,10 +416,10 @@ const resumePageDisplay = () => {
   jQuery('.projects-page').hide()
   jQuery('.contact-page').hide()
 
-  jQuery('.about-me-link').removeClass('current-menu-item')
-  jQuery('.resume-link').addClass('current-menu-item')
-  jQuery('.projects-link').removeClass('current-menu-item')
-  jQuery('.contact-link').removeClass('current-menu-item')
+  jQuery('.about-me-menu').removeClass('current-menu-item')
+  jQuery('.resume-menu').addClass('current-menu-item')
+  jQuery('.projects-menu').removeClass('current-menu-item')
+  jQuery('.contact-menu').removeClass('current-menu-item')
 }
 
 const projectsPageDisplay = () => {
@@ -428,10 +428,10 @@ const projectsPageDisplay = () => {
   jQuery('.projects-page').show()
   jQuery('.contact-page').hide()
 
-  jQuery('.about-me-link').removeClass('current-menu-item')
-  jQuery('.resume-link').removeClass('current-menu-item')
-  jQuery('.projects-link').addClass('current-menu-item')
-  jQuery('.contact-link').removeClass('current-menu-item')
+  jQuery('.about-me-menu').removeClass('current-menu-item')
+  jQuery('.resume-menu').removeClass('current-menu-item')
+  jQuery('.projects-menu').addClass('current-menu-item')
+  jQuery('.contact-menu').removeClass('current-menu-item')
 }
 
 const contactPageDisplay = () => {
@@ -440,8 +440,8 @@ const contactPageDisplay = () => {
   jQuery('.projects-page').hide()
   jQuery('.contact-page').show()
 
-  jQuery('.about-me-link').removeClass('current-menu-item')
-  jQuery('.resume-link').removeClass('current-menu-item')
-  jQuery('.projects-link').removeClass('current-menu-item')
-  jQuery('.contact-link').addClass('current-menu-item')
+  jQuery('.about-me-menu').removeClass('current-menu-item')
+  jQuery('.resume-menu').removeClass('current-menu-item')
+  jQuery('.projects-menu').removeClass('current-menu-item')
+  jQuery('.contact-menu').addClass('current-menu-item')
 }
