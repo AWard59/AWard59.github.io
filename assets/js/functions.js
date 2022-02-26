@@ -253,6 +253,7 @@ jQuery(() => {
                     .removeAttr('style')
                 }
               })
+
             if (!jQuerybody.hasClass('cv')) {
               const jQuerynav_buttons = jQuery(this).add(jQuery(this).prev('.owl-nav'))
               jQuerynav_buttons.animate(
@@ -331,7 +332,7 @@ jQuery(() => {
       const menu_pos = 0
       if (win_width < 767) {
         jQuerymenu.css({
-          top: jQuerylogo.position().top * 2 + jQuerylogo.outerHeight()
+          // top: jQuerylogo.position().top * 2 + jQuerylogo.outerHeight()
         })
       } else {
         jQuerymenu.removeAttr('style')
