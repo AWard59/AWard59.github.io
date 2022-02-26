@@ -6,13 +6,12 @@
         $mail_to = "ash.ward@live.ca";
         
         # Sender Data
-        $subject = trim($_POST["subject"]);
-        $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
+        $subject = "Portfolio Contact Form";
+        $name = $_POST["name"];
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $phone = trim($_POST["phone"]);
-        $message = trim($_POST["message"]);
+        $message = $_POST["message"];
         
-        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($subject) OR empty($message)) {
+        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($message)) {
             # Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Please complete the form and try again.";
@@ -20,10 +19,10 @@
         }
         
         # Mail Content
-        $content = "Name: $name\n";
-        $content .= "Email: $email\n\n";
-        $content .= "Phone: $phone\n";
-        $content .= "Message:\n$message\n";
+        $content = 
+        "Name: $name\n
+        Email: $email\n\n
+        Message:\n$message\n";
 
         # email headers.
         $headers = "From: $name <$email>";
