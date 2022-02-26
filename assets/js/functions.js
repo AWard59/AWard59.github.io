@@ -363,6 +363,7 @@ jQuery(() => {
   $('#resume-link').on('click', resumePageDisplay)
   $('#projects-link').on('click', projectsPageDisplay)
   $('#contact-link').on('click', contactPageDisplay)
+  $('#fried-foods-button').on('click', friedFoodsEventClicker)
 })
 
 // Contact Form
@@ -444,4 +445,9 @@ const contactPageDisplay = () => {
   jQuery('.resume-menu').removeClass('current-menu-item')
   jQuery('.projects-menu').removeClass('current-menu-item')
   jQuery('.contact-menu').addClass('current-menu-item')
+}
+
+const friedFoodsEventClicker = (event) => {
+  const friedFoodSelector = ['chicken', 'potato', 'dough', 'cauliflower', 'onion', 'pork']
+  event.target.value = friedFoodSelector[Math.floor(Math.random() * friedFoodSelector.length)]
 }
