@@ -107,6 +107,3 @@ specs.js
 application.js
 _SpecRunner.html
 *.woff2
-*.woff
-*.ttf
-*.eot
