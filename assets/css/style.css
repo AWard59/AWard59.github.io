@@ -24,6 +24,19 @@
     display: none;
 }
 
+.svg-images {
+    margin-bottom: 3vh;
+}
+
+.about-me-pic {
+   border-radius: 25%;
+   margin-left: 5px;
+   margin-right: 5px;
+   max-height: 16em;
+   justify-self: center;
+}
+
+
 html,
 body {
     -moz-osx-font-smoothing: grayscale;
