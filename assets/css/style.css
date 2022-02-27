@@ -18,7 +18,7 @@
 /* 01. Google Font */
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500|Rambla:400,700');
 
-/* 02. General Settings */
+/* Custom */
 
 .resume-page, .projects-page, .contact-page {
     display: none;
@@ -29,13 +29,18 @@
 }
 
 .about-me-pic {
-   border-radius: 25%;
-   margin-left: 5px;
-   margin-right: 5px;
-   max-height: 16em;
-   justify-self: center;
+    border-radius: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: 16em;
+    justify-self: center;
 }
 
+.formbg {
+    background-color: #101010;
+}
+
+/* 02. General Settings */
 
 html,
 body {
@@ -3060,86 +3065,11 @@ input[type="submit"] {
     margin-bottom: 0;
 }
 
-
 /* Form */
-
-.form-control {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #e5e5e5;
-    height: 54px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    border-radius: 0;
-    padding: 0;
-    font-family: 'Rambla', sans-serif;
-    font-size: 15px;
-    line-height: 1.75em;
-    font-weight: 400;
-}
-
-.form-control:active,
-.form-control:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-color: #101010;
-    border-bottom: 2px solid #101010;
-}
-
-.toolbar {
-    padding: 0;
-}
-
 
 #message {
     height: 130px;
 }
-
-
-/* Sidebar */
-.mccan-sidebar-part {}
-
-.mccan-sidebar-block {
-    margin-bottom: 35px;
-    position: relative;
-}
-
-.mccan-sidebar-block .mccan-sidebar-block-title {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* Search */
-
-.mccan-sidebar-search-form {
-    position: relative;
-}
-
-.mccan-sidebar-search-submit {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    background: none;
-    border: 0;
-    padding: 12px 15px;
-    font-size: 17px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    color: #888;
-    background: transparent;
-}
-
 
 /* Categories */
 
@@ -3169,41 +3099,6 @@ input[type="submit"] {
 .ul1 > li a:hover {
     color: #F68338;
     text-decoration: none;
-}
-
-
-/* Latest Posts */
-
-.latest {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #222;
-    padding-bottom: 10px;
-}
-
-.latest a {
-    color: #888;
-    display: block;
-    text-decoration: none;
-}
-
-.latest a .txt1 {
-    font-weight: 400;
-    line-height: 1.5em;
-}
-
-.latest a .txt2 {
-    color: #888;
-    font-size: 13px;
-    font-weight: 400;
-    margin-top: 10px;
-    transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-}
-
-.latest a:hover .txt1 {
-    color: #F68338;
 }
 
 /* Tags, Keywords */
@@ -3244,49 +3139,6 @@ input[type="submit"] {
     background: #F68338;
     color: #fff;
     border-color: #F68338;
-}
-
-
-
-
-/* Pagination */
-.mccan-blog-navigation {
-    text-align: center;
-    margin-bottom: 60px;
-    margin-top: 60px;
-}
-
-.mccan-blog-navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.mccan-blog-navigation ul li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.mccan-blog-navigation ul li a {
-    color: #888;
-    border: 1px solid transparent;
-    background-color: transparent;
-    padding: 5px 15px 5px 15px;
-    display: block;
-    transition: all 0.4s;
-    text-decoration: none;
-}
-
-.mccan-blog-navigation ul li a:hover {
-    border: 1px solid #222;
-    background-color: #222;
-    color: #fff;
-}
-
-.mccan-blog-navigation li > a.active {
-    border: 1px solid #222;
-    background-color: #222;
-    color: #fff;
 }
 
 /*** 15. Services styles ***/

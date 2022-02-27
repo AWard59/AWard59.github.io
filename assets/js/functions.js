@@ -364,39 +364,7 @@ jQuery(() => {
   $('#projects-link').on('click', projectsPageDisplay)
   $('#contact-link').on('click', contactPageDisplay)
   $('#fried-foods-button').on('click', friedFoodsEventClicker)
-})
-
-// Contact Form
-const form = jQuery('.contact__form')
-const message = jQuery('.contact__msg')
-let form_data
-// success function
-function done_func (response) {
-  message.fadeIn().removeClass('alert-danger').addClass('alert-success')
-  message.text(response)
-  setTimeout(function () {
-    message.fadeOut()
-  }, 2000)
-  form.find('input:not([type="submit"]), textarea').val('')
-}
-// fail function
-function fail_func (data) {
-  message.fadeIn().removeClass('alert-success').addClass('alert-success')
-  message.text(data.responseText)
-  setTimeout(function () {
-    message.fadeOut()
-  }, 2000)
-}
-form.submit(function (e) {
-  e.preventDefault()
-  form_data = jQuery(this).serialize()
-  jQuery.ajax({
-    type: 'POST',
-    url: form.attr('action'),
-    data: form_data
-  })
-    .done(done_func)
-    .fail(fail_func)
+  $('#contact-form').on('submit', sendContactEmail)
 })
 
 const aboutPageDisplay = () => {
@@ -448,6 +416,20 @@ const contactPageDisplay = () => {
 }
 
 const friedFoodsEventClicker = (event) => {
-  const friedFoodSelector = ['chicken', 'potato', 'dough', 'cauliflower', 'onion', 'pork']
+  const friedFoodSelector = ['chicken', 'potato', 'dough', 'cauliflower', 'onion', 'pork', 'burrito']
   event.target.value = friedFoodSelector[Math.floor(Math.random() * friedFoodSelector.length)]
+}
+
+const sendContactEmail = (event) => {
+  event.preventDefault()
+  emailjs.sendForm('contact_service', 'contact_form', '#contact-form')
+    .then(
+      function () {
+        $('.contact__msg').text('Your message was sent successfully.')
+        $('.contact__msg').show()
+      })
+    .catch(function () {
+      $('.contact__msg').text('Your message was not sent.')
+      $('.contact__msg').show()
+    })
 }
