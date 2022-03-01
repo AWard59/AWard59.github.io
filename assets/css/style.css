@@ -40,6 +40,10 @@
     background-color: #101010;
 }
 
+.button-bg {
+    border: 2px solid black;
+}
+
 /* 02. General Settings */
 
 html,
