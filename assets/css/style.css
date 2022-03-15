@@ -64,6 +64,7 @@ body {
     position: relative;
     overflow-x: hidden;
     background-color: #191919;
+    padding-bottom: 120px;
 }
 
 p {
