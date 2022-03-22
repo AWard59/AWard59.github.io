@@ -416,7 +416,7 @@ const contactPageDisplay = () => {
 }
 
 const friedFoodsEventClicker = (event) => {
-  const friedFoodSelector = ['chicken', 'potato', 'dough', 'cauliflower', 'onion', 'pork', 'burrito']
+  const friedFoodSelector = ['chicken', 'potato', 'dough', 'cauliflower', 'onion', 'pork', 'burrito', 'oreo']
   event.target.value = friedFoodSelector[Math.floor(Math.random() * (friedFoodSelector.length))]
 }
 

@@ -63,13 +63,13 @@ body {
     min-height: 100%;
     position: relative;
     overflow-x: hidden;
-    background-color: #191919;
+    background-color: #262626;
     padding-bottom: 120px;
 }
 
 p {
     font-family: 'Rambla', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.75em;
     font-weight: 400;
     color: #888;
