@@ -3324,6 +3324,14 @@ input[type="submit"] {
     right: 30px
 }
 
+.tech-stack {
+    padding: 0;
+    padding-top: 20px;
+    display: block;
+    position: relative;
+    word-wrap: break-word;
+}
+
 .project .desc .con .icon span {
     display: inline;
     padding-right: 5px
