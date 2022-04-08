@@ -44,6 +44,12 @@
     border: 2px solid black;
 }
 
+.modal-content {
+    background-color: #101010;
+    color: #888;
+    font-family: 'Oswald', sans-serif;
+}
+
 /* 02. General Settings */
 
 html,

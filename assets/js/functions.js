@@ -365,6 +365,8 @@ jQuery(() => {
   $('#contact-link').on('click', contactPageDisplay)
   $('#fried-foods-button').on('click', friedFoodsEventClicker)
   $('#contact-form').on('submit', sendContactEmail)
+  $('#only-exams-modal-show').on('click', showModalOnlyExams)
+  $('.only-exams-close').on('click', hideModalOnlyExams)
 })
 
 const aboutPageDisplay = () => {
@@ -432,4 +434,12 @@ const sendContactEmail = (event) => {
       $('.contact__msg').text('Your message was not sent.')
       $('.contact__msg').show()
     })
+}
+
+const showModalOnlyExams = () => {
+  $('#only-exams-modal').show()
+}
+
+const hideModalOnlyExams = () => {
+  $('#only-exams-modal').hide()
 }
